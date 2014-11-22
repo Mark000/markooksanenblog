@@ -6,11 +6,13 @@ var path = require('path'),
     config;
 
 config = {
-   // ### Production
+
+    // ### Production
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
         url: 'https://markooksanenblog.herokuapp.com',
+        fileStorage: false,
         mail: {},
         database: {
             client: 'postgres',
@@ -21,12 +23,9 @@ config = {
               database: 'd80t6d3s6100s0',
               port: '5432'
            },
-
         server: {
-            // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
-            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
+          host: '0.0.0.0',
+          port: process.env.PORT
         }
     },
 
