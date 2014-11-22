@@ -13,20 +13,21 @@ config = {
         url: 'http://my-ghost-blog.com',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
-            },
-            debug: false
+              host: 'ec2-54-243-245-159.compute-1.amazonaws.com',
+              user: 'tbvjiqwilmjivr',
+              password: 'RMNUQD-LuvRScu-7kAZml-derb',
+              database: 'd80t6d3s6100s0',
+              port: '5432'
         },
 
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
-        }
-    },
+            port: process.env.PORT
+            },
 
     // ### Development **(default)**
     development: {
