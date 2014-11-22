@@ -6,7 +6,7 @@ var path = require('path'),
     config;
 
 config = {
-    // ### Production
+   // ### Production
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
@@ -24,11 +24,11 @@ config = {
 
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '0.0.0.0',
+            host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: process.env.PORT
-            }
-        },
+            port: '2368'
+        }
+    },
 
     // ### Development **(default)**
     development: {
