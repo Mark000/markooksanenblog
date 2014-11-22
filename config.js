@@ -1,4 +1,4 @@
-    // # Ghost Configuration
+// # Ghost Configuration
 // Setup your Ghost install for various environments
 // Documentation can be found at http://support.ghost.org/config/
 
@@ -23,6 +23,8 @@ config = {
               database: 'd80t6d3s6100s0',
               port: '5432'
            },
+          debug: false
+            },
         server: {
           host: '0.0.0.0',
           port: process.env.PORT
