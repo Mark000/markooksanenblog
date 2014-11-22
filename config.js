@@ -20,14 +20,15 @@ config = {
               password: 'RMNUQD-LuvRScu-7kAZml-derb',
               database: 'd80t6d3s6100s0',
               port: '5432'
-        },
+           },
 
         server: {
             // Host to be passed to node's `net.Server#listen()`
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: process.env.PORT
-            },
+            }
+        },
 
     // ### Development **(default)**
     development: {
