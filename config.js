@@ -27,54 +27,31 @@ config = {
             },
         server: {
           host: '0.0.0.0',
-          port: process.env.PORT
+          port: 80
         }
     },
 
-    // ### Development **(default)**
     development: {
-        // The url to use when providing links to the site, E.g. in RSS and email.
-        // Change this to your Ghost blogs published URL.
-        url: 'http://localhost:2368',
-
-        // Example mail config
-        // Visit http://support.ghost.org/mail for instructions
-        // ```
-        //  mail: {
-        //      transport: 'SMTP',
-        //      options: {
-        //          service: 'Mailgun',
-        //          auth: {
-        //              user: '', // mailgun username
-        //              pass: ''  // mailgun password
-        //          }
-        //      }
-        //  },
-        // ```
-
+        url: 'http://localhost',
+        fileStorage: false,
+        mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+              host: 'localhost',
+              user: 'root',
+              password: '',
+              database: 'ghost',
+              port: '5432'
+           },
+          debug: false
             },
-            debug: false
-        },
         server: {
-            // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
-            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
-        },
-        paths: {
-            contentPath: path.join(__dirname, '/content/')
+          host: '127.0.0.1',
+          port: 2368
         }
     },
 
-    // **Developers only need to edit below here**
-
-    // ### Testing
-    // Used when developing Ghost to run tests and check the health of Ghost
-    // Uses a different port number
     testing: {
         url: 'http://127.0.0.1:2369',
         database: {
