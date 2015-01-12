@@ -13,7 +13,16 @@ config = {
     production: {
         url: 'https://markooksanenblog.herokuapp.com',
         fileStorage: false,
-        mail: {},
+        mail: {
+          transport: 'SMTP',
+          options: {
+              service: 'Mailgun',
+              auth: {
+                  user: 'postmaster@app31865704.mailgun.org', // mailgun username
+                  pass: '284bc656c4751b1f7742e78397c38b37'  // mailgun password
+              }
+            }
+          },
         database: {
             client: 'postgres',
             connection: {
@@ -32,9 +41,18 @@ config = {
     },
 
     development: {
-        url: 'http://localhost',
+        url: 'http://localhost:2368',
         fileStorage: false,
-        mail: {},
+        mail: {
+          transport: 'SMTP',
+          options: {
+              service: 'Mailgun',
+              auth: {
+                  user: 'postmaster@app31865704.mailgun.org', // mailgun username
+                  pass: '284bc656c4751b1f7742e78397c38b37'  // mailgun password
+              }
+            }
+          },
         database: {
             client: 'postgres',
             connection: {
