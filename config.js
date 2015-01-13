@@ -12,7 +12,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'blog.markooksanen.com',
+        url: 'https://markooksanenblog.herokuapp.com',
         fileStorage: false,
         mail: {
           transport: 'SMTP',
