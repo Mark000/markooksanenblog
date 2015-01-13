@@ -13,7 +13,7 @@ config = {
     production: {
         url: 'http://blog.markooksanen.com',
         fileStorage: false,
-        forceAdminSSL: true,
+        forceAdminSSL: {redirect: false},
         mail: {
           transport: 'SMTP',
           options: {
