@@ -36,7 +36,7 @@ config = {
           debug: false
             },
         server: {
-          host: '0.0.0.0',
+          host: 'blog.markooksanen.com',
           port: process.env.PORT
         }
     },
