@@ -1,6 +1,6 @@
 var forever = require('forever');
 
-var child = new (forever.Monitor)('web.js', {
+var child = new (forever.Monitor)('index.js', {
   max: 3,
   silent: false,
   options: []
