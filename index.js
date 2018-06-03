@@ -1,4 +1,4 @@
-require('newrelic');
+// require('newrelic');
 
 // # Ghost bootloader
 // Orchestrates the loading of Ghost
