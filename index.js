@@ -6,6 +6,7 @@
 
 var express,
     ghost,
+    path,
     parentApp,
     errors;
 
@@ -15,6 +16,7 @@ require('./core/server/utils/startup-check').check();
 // Proceed with startup
 express = require('express');
 ghost = require('./core');
+path = require('path');
 errors = require('./core/server/errors');
 
 // Create our parent express app instance.
