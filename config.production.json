@@ -1,0 +1,22 @@
+{
+    "database": {
+        "client": "postgres",
+        "connection": {
+            "host"     : "ec2-54-243-245-159.compute-1.amazonaws.com",
+            "user"     : "tbvjiqwilmjivr",
+            "password" : "RMNUQD-LuvRScu-7kAZml-derb",
+            "database" : "d80t6d3s6100s0",
+            "port"     : "5432"
+        }
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": ["file", "stdout"]
+    }
+}
