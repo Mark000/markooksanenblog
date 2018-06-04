@@ -27,12 +27,23 @@ config = {
         database: {
             client: 'postgres',
             connection: {
+              host: 'ec2-23-21-189-181.compute-1.amazonaws.com',
+              user: 'xkbiqsqcgfuhkj',
+              password: '8a0c25a653664d8e53a6dc6057d5212a258c0d3f888dca44085bbb0eae8946a9',
+              database: 'd5smovg0kj38bu',
+              port: '5432'
+           },
+           /* Not sure why this doesn't work, but updating
+            connection: {
               host: 'ec2-54-243-245-159.compute-1.amazonaws.com',
               user: 'tbvjiqwilmjivr',
               password: 'RMNUQD-LuvRScu-7kAZml-derb',
               database: 'd80t6d3s6100s0',
               port: '5432'
-           },
+           },*/
+
+           postgres://:@:5432/
+
           debug: false
             },
           paths: {
