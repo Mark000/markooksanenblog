@@ -33,7 +33,7 @@ config = {
               database: 'd5smovg0kj38bu',
               port: '5432'
            },
-           /* Not sure why this doesn't work, but updating
+      /* Not sure from where this info is and why this doesn't work, but updating now based on Heroku info
             connection: {
               host: 'ec2-54-243-245-159.compute-1.amazonaws.com',
               user: 'tbvjiqwilmjivr',
@@ -41,9 +41,6 @@ config = {
               database: 'd80t6d3s6100s0',
               port: '5432'
            },*/
-
-           postgres://:@:5432/
-
           debug: false
             },
           paths: {
