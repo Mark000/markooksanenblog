@@ -1,1 +1,1 @@
-web: NODE_ENV=production node forever.js
+web: NODE_ENV=production npm start
